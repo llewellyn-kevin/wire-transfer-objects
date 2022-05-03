@@ -1,0 +1,13 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+WireTransferObjects	src/WireTransferObjects.php	/^class WireTransferObjects$/;"	c
+WireTransferObjectsFacade	src/WireTransferObjectsFacade.php	/^class WireTransferObjectsFacade extends Facade$/;"	c
+WireTransferObjectsServiceProvider	src/WireTransferObjectsServiceProvider.php	/^class WireTransferObjectsServiceProvider extends ServiceProvider$/;"	c
+boot	src/WireTransferObjectsServiceProvider.php	/^    public function boot()$/;"	f
+getFacadeAccessor	src/WireTransferObjectsFacade.php	/^    protected static function getFacadeAccessor()$/;"	f
+register	src/WireTransferObjectsServiceProvider.php	/^    public function register()$/;"	f
+to	src/WireTransferObjectsServiceProvider.php	/^        \/\/ Register the main class to use with the facade$/;"	c

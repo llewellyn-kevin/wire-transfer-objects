@@ -17,7 +17,9 @@
     ],
     "require": {
         "php": "^7.4|^8.0",
-        "illuminate/support": "^8.0"
+        "illuminate/support": "^8.0",
+        "livewire/livewire": "^2.10",
+        "spatie/laravel-data": "^1.4"
     },
     "require-dev": {
         "orchestra/testbench": "^6.0",
