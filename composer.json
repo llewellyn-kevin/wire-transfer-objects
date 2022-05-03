@@ -1,0 +1,54 @@
+{
+    "name": "llewellyn-kevin/wire-transfer-objects",
+    "description": "Adapters to leverage data transfer objects (including Spatie feature support) with Livewire in an intuitive way.",
+    "keywords": [
+        "llewellyn-kevin",
+        "wire-transfer-objects"
+    ],
+    "homepage": "https://github.com/llewellyn-kevin/wire-transfer-objects",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Kevin Llewellyn",
+            "email": "llewellynkevin1@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LlewellynKevin\\WireTransferObjects\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LlewellynKevin\\WireTransferObjects\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LlewellynKevin\\WireTransferObjects\\WireTransferObjectsServiceProvider"
+            ],
+            "aliases": {
+                "WireTransferObjects": "LlewellynKevin\\WireTransferObjects\\WireTransferObjectsFacade"
+            }
+        }
+    }
+}
