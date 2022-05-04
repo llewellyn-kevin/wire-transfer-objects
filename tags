@@ -4,10 +4,46 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+Builder	src/Builder.php	/^class Builder implements Wireable$/;"	c
 WireTransferObjects	src/WireTransferObjects.php	/^class WireTransferObjects$/;"	c
 WireTransferObjectsFacade	src/WireTransferObjectsFacade.php	/^class WireTransferObjectsFacade extends Facade$/;"	c
 WireTransferObjectsServiceProvider	src/WireTransferObjectsServiceProvider.php	/^class WireTransferObjectsServiceProvider extends ServiceProvider$/;"	c
+WireableData	src/WireableData.php	/^class WireableData extends SpatieData implements Wireable$/;"	c
+WireableDataCollection	src/WireableDataCollection.php	/^class WireableDataCollection extends DataCollection implements Wireable$/;"	c
+__construct	src/Builder.php	/^    public function __construct($/;"	f
+__construct	src/WireableDataCollection.php	/^    public function __construct($/;"	f
+__get	src/Builder.php	/^    public function __get(string $key)$/;"	f
+__set	src/Builder.php	/^    public function __set(string $key, mixed $value)$/;"	f
+attributeExists	src/Builder.php	/^    private function attributeExists(string $attributeKey): bool$/;"	f
+attributes	src/Builder.php	/^        protected array $attributes = [],$/;"	v
 boot	src/WireTransferObjectsServiceProvider.php	/^    public function boot()$/;"	f
+bucket	src/WireableData.php	/^        $bucket = [];$/;"	v
+dataObject	src/Builder.php	/^        $dataObject = $values['lw-dataObject'];$/;"	v
+dataObject	src/Builder.php	/^        public ?string $dataObject = null,$/;"	v
+dataObject	src/WireableDataCollection.php	/^        $dataObject = $data['lw-datacollection-object'];$/;"	v
+defaultValues	src/WireableData.php	/^    private static function nil(array $defaultValues = []): array$/;"	v
+defaultValues	src/WireableData.php	/^    public static function getBuilder(array $defaultValues = [])$/;"	v
+empty	src/WireableData.php	/^        $empty = static::empty($defaultValues);$/;"	v
+fields	src/WireableData.php	/^                $fields = explode("$property.", $key);$/;"	v
+fromLivewire	src/Builder.php	/^    public static function fromLivewire($values)$/;"	f
+fromLivewire	src/WireableData.php	/^    public static function fromLivewire($value)$/;"	f
+fromLivewire	src/WireableDataCollection.php	/^    public static function fromLivewire($data)$/;"	f
+getBuilder	src/WireableData.php	/^    public static function getBuilder(array $defaultValues = [])$/;"	f
 getFacadeAccessor	src/WireTransferObjectsFacade.php	/^    protected static function getFacadeAccessor()$/;"	f
+getNestedDefaults	src/WireableData.php	/^    private static function getNestedDefaults(string $property, array $defaults): array$/;"	f
+key	src/Builder.php	/^        \/\/ foreach ($values as $key => $value) {$/;"	v
+key	src/Builder.php	/^        foreach ($this->attributes as $key => $attribute) {$/;"	v
+key	src/WireableData.php	/^        foreach ($defaults as $key => $default) {$/;"	v
+metaIndex	src/WireableDataCollection.php	/^        $metaIndex = array_search('lw-datacollection-object', array_keys($data));$/;"	v
+nil	src/WireableData.php	/^    private static function nil(array $defaultValues = []): array$/;"	f
+properties	src/WireableData.php	/^        $properties = collect($reflection->getProperties());$/;"	v
+reflection	src/WireableData.php	/^        $reflection = new ReflectionClass(get_called_class());$/;"	v
 register	src/WireTransferObjectsServiceProvider.php	/^    public function register()$/;"	f
+relationship	src/WireableData.php	/^            $relationship = new ReflectionClass($property->getType()->getName());$/;"	v
+relationshipName	src/WireableData.php	/^            $relationshipName = $relationship->getName();$/;"	v
+relationshipParent	src/WireableData.php	/^            $relationshipParent = $relationship->getParentClass();$/;"	v
 to	src/WireTransferObjectsServiceProvider.php	/^        \/\/ Register the main class to use with the facade$/;"	c
+toData	src/Builder.php	/^    public function toData()$/;"	f
+toLivewire	src/Builder.php	/^    public function toLivewire()$/;"	f
+toLivewire	src/WireableData.php	/^    public function toLivewire()$/;"	f
+toLivewire	src/WireableDataCollection.php	/^    public function toLivewire()$/;"	f
