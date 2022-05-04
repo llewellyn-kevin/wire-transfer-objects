@@ -1,6 +1,6 @@
 <?php
 
-namespace LlewellynKevin\DataTransferObjects;
+namespace LlewellynKevin\DataTransferObjects\Traits;
 
 use App\DataTransferObjects\Builder;
 use App\DataTransferObjects\WireableData;
