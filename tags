@@ -17,7 +17,10 @@ __set	src/Builder.php	/^    public function __set(string $key, mixed $value)$/;"
 attributeExists	src/Builder.php	/^    private function attributeExists(string $attributeKey): bool$/;"	f
 attributes	src/Builder.php	/^        protected array $attributes = [],$/;"	v
 boot	src/WireTransferObjectsServiceProvider.php	/^    public function boot()$/;"	f
+bucket	src/Traits/ValidatesDataObjects.php	/^        $bucket = [];$/;"	v
 bucket	src/WireableData.php	/^        $bucket = [];$/;"	v
+className	src/Traits/ValidatesDataObjects.php	/^                    $className = $this->isBuilder($class) ? $this->$propertyName?->dataObject : $class->getName();$/;"	v
+className	src/Traits/ValidatesDataObjects.php	/^                $className = $property->getType()?->getName();$/;"	v
 dataObject	src/Builder.php	/^        $dataObject = $values['lw-dataObject'];$/;"	v
 dataObject	src/Builder.php	/^        public ?string $dataObject = null,$/;"	v
 dataObject	src/WireableDataCollection.php	/^        $dataObject = $data['lw-datacollection-object'];$/;"	v
@@ -29,19 +32,29 @@ fromLivewire	src/Builder.php	/^    public static function fromLivewire($values)$
 fromLivewire	src/WireableData.php	/^    public static function fromLivewire($value)$/;"	f
 fromLivewire	src/WireableDataCollection.php	/^    public static function fromLivewire($data)$/;"	f
 getBuilder	src/WireableData.php	/^    public static function getBuilder(array $defaultValues = [])$/;"	f
+getDtoRules	src/Traits/ValidatesDataObjects.php	/^    public function getDtoRules(array $rules): array$/;"	f
 getFacadeAccessor	src/WireTransferObjectsFacade.php	/^    protected static function getFacadeAccessor()$/;"	f
 getNestedDefaults	src/WireableData.php	/^    private static function getNestedDefaults(string $property, array $defaults): array$/;"	f
+isAutodiscoverable	src/Traits/ValidatesDataObjects.php	/^    private function isAutodiscoverable(ReflectionClass $class): bool$/;"	f
+isBuilder	src/Traits/ValidatesDataObjects.php	/^    private function isBuilder(ReflectionClass $class): bool$/;"	f
+isDataClass	src/Traits/ValidatesDataObjects.php	/^    private function isDataClass(ReflectionClass $class): bool$/;"	f
 key	src/Builder.php	/^        \/\/ foreach ($values as $key => $value) {$/;"	v
 key	src/Builder.php	/^        foreach ($this->attributes as $key => $attribute) {$/;"	v
 key	src/WireableData.php	/^        foreach ($defaults as $key => $default) {$/;"	v
 metaIndex	src/WireableDataCollection.php	/^        $metaIndex = array_search('lw-datacollection-object', array_keys($data));$/;"	v
+mountValidatesDataObjects	src/Traits/ValidatesDataObjects.php	/^    public function mountValidatesDataObjects()$/;"	f
+nil	src/Traits/ValidatesDataObjects.php	/^                $nil = [0 => null];$/;"	v
 nil	src/WireableData.php	/^    private static function nil(array $defaultValues = []): array$/;"	f
+properties	src/Traits/ValidatesDataObjects.php	/^        $properties = collect($reflection->getProperties(ReflectionProperty::IS_PUBLIC));$/;"	v
 properties	src/WireableData.php	/^        $properties = collect($reflection->getProperties());$/;"	v
+propertyName	src/Traits/ValidatesDataObjects.php	/^                $propertyName = $property->getName();$/;"	v
+reflection	src/Traits/ValidatesDataObjects.php	/^        $reflection = new ReflectionClass($this);$/;"	v
 reflection	src/WireableData.php	/^        $reflection = new ReflectionClass(get_called_class());$/;"	v
 register	src/WireTransferObjectsServiceProvider.php	/^    public function register()$/;"	f
 relationship	src/WireableData.php	/^            $relationship = new ReflectionClass($property->getType()->getName());$/;"	v
 relationshipName	src/WireableData.php	/^            $relationshipName = $relationship->getName();$/;"	v
 relationshipParent	src/WireableData.php	/^            $relationshipParent = $relationship->getParentClass();$/;"	v
+rules	src/Traits/ValidatesDataObjects.php	/^                $this->rules = array_merge($/;"	v
 to	src/WireTransferObjectsServiceProvider.php	/^        \/\/ Register the main class to use with the facade$/;"	c
 toData	src/Builder.php	/^    public function toData()$/;"	f
 toLivewire	src/Builder.php	/^    public function toLivewire()$/;"	f
