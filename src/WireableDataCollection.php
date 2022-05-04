@@ -1,6 +1,6 @@
 <?php
 
-namespace App\DataTransferObjects;
+namespace LlewellynKevin\WireTransferObjects;
 
 use Illuminate\Contracts\Pagination\CursorPaginator;
 use Illuminate\Contracts\Pagination\Paginator;

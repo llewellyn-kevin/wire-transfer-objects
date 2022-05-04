@@ -1,6 +1,6 @@
 <?php
 
-namespace App\DataTransferObjects;
+namespace LlewellynKevin\WireTransferObjects;
 
 use Exception;
 use Livewire\Wireable;
