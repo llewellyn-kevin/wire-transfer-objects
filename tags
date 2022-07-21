@@ -13,7 +13,9 @@ WireableDataCollection	src/WireableDataCollection.php	/^class WireableDataCollec
 __construct	src/Builder.php	/^    public function __construct($/;"	f
 __construct	src/WireableDataCollection.php	/^    public function __construct($/;"	f
 __get	src/Builder.php	/^    public function __get(string $key)$/;"	f
+__get	src/WireableData.php	/^    public function __get(string $name): mixed$/;"	f
 __set	src/Builder.php	/^    public function __set(string $key, mixed $value)$/;"	f
+accessor	src/WireableData.php	/^        $accessor =  "get{$studlyName}Attribute";$/;"	v
 attributeExists	src/Builder.php	/^    private function attributeExists(string $attributeKey): bool$/;"	f
 attributes	src/Builder.php	/^        protected array $attributes = [],$/;"	v
 boot	src/WireTransferObjectsServiceProvider.php	/^    public function boot()$/;"	f
@@ -21,6 +23,7 @@ bucket	src/Traits/ValidatesDataObjects.php	/^        $bucket = [];$/;"	v
 bucket	src/WireableData.php	/^        $bucket = [];$/;"	v
 className	src/Traits/ValidatesDataObjects.php	/^                    $className = $this->isBuilder($class) ? $this->$propertyName?->dataObject : $class->getName();$/;"	v
 className	src/Traits/ValidatesDataObjects.php	/^                $className = $property->getType()?->getName();$/;"	v
+classname	src/WireableData.php	/^        $classname = static::class;$/;"	v
 dataObject	src/Builder.php	/^        $dataObject = $values['lw-dataObject'];$/;"	v
 dataObject	src/Builder.php	/^        public ?string $dataObject = null,$/;"	v
 dataObject	src/WireableDataCollection.php	/^        $dataObject = $data['lw-datacollection-object'];$/;"	v
@@ -55,6 +58,7 @@ relationship	src/WireableData.php	/^            $relationship = new ReflectionCl
 relationshipName	src/WireableData.php	/^            $relationshipName = $relationship->getName();$/;"	v
 relationshipParent	src/WireableData.php	/^            $relationshipParent = $relationship->getParentClass();$/;"	v
 rules	src/Traits/ValidatesDataObjects.php	/^                $this->rules = array_merge($/;"	v
+studlyName	src/WireableData.php	/^        $studlyName = implode('', Arr::map(explode('_', $name), fn (string $field) => ucfirst($field)));$/;"	v
 to	src/WireTransferObjectsServiceProvider.php	/^        \/\/ Register the main class to use with the facade$/;"	c
 toData	src/Builder.php	/^    public function toData()$/;"	f
 toLivewire	src/Builder.php	/^    public function toLivewire()$/;"	f
