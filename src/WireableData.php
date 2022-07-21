@@ -82,4 +82,19 @@ class WireableData extends SpatieData implements Wireable
 
         return $bucket;
     }
+
+    /**
+     * Add an override for accessors to work.
+     */
+    public function __get(string $name): mixed
+    {
+        $studlyName = implode('', Arr::map(explode('_', $name), fn (string $field) => ucfirst($field)));
+        $accessor =  "get{$studlyName}Attribute";
+        if (method_exists($this, $accessor)) {
+            return call_user_func([$this, $accessor]);
+        }
+
+        $classname = static::class;
+        throw new Exception("Trying to access invalid property `$name`, which has no accessor or property defined on dto `$classname`");
+    }
 }
